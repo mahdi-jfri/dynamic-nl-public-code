@@ -27,7 +27,9 @@ The runners use `${PYTHON}` when it is set. Otherwise they prefer
 PyG and OGB datasets are downloaded into `data/` by their loaders.
 
 For the dynamic SBM-500K experiment, place the SBM text files under
-`data/sbm-500k/`. See `dynamic/README.md` for the expected filenames.
+`data/sbm-500k/`. For generating or obtaining these files, refer to the
+upstream repository: <https://github.com/zheng-yp/InstantGNN>.
+See `dynamic/README.md` for the expected filenames.
 
 ## Running
 
@@ -43,6 +45,5 @@ Dynamic sweeps:
 scripts/run_dynamic.sh
 ```
 
-Both scripts are local-process launchers. Increase parallelism with
-`MAX_JOBS`, select GPUs with `GPUS`, and reduce run size for smoke tests with
+Both scripts run experiments sequentially. Reduce run size for smoke tests with
 the documented environment variables inside each script.

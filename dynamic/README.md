@@ -10,7 +10,8 @@ this repository. Set `NLPPR_BUILD_VERBOSE=1` to print compiler commands.
 ## Data defaults
 
 - OGB datasets are read from `data/ogb`.
-- SBM-500K files are read from `data/sbm-500k`.
+- SBM-500K files are read from `data/sbm-500k`. For generating or obtaining
+  them, refer to <https://github.com/zheng-yp/InstantGNN>.
 
 The SBM directory should contain:
 
